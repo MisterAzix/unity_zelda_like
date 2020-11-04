@@ -13,6 +13,10 @@ public class CursorScript : MonoBehaviour
 
     // Start is called before the first frame update
 
+    void Awake(){
+        Cursor.SetCursor(defaultTexture, hotSpot, curMode);
+    }
+
     void OnMouseOver(){
         switch(gameObject.tag){
             case "Click":
