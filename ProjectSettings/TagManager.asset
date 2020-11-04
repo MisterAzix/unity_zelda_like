@@ -8,6 +8,8 @@ TagManager:
   - NPC
   - InstantDialog
   - Fireball
+  - Click
+  - Grab
   layers:
   - Default
   - TransparentFX
