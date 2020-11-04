@@ -5,7 +5,7 @@ using UnityEngine;
 public class menuButton2 : MonoBehaviour
 {
     void OnMouseOver(){
-        if(Input.GetKeyDown(KeyCode.Mouse0)){
+        if(Input.GetKeyUp(KeyCode.Mouse0)){
             Debug.Log("Quit!");
             Application.Quit();
         }

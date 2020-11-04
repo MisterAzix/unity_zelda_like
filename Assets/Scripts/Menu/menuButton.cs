@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class menuButton : MonoBehaviour
 {
     void OnMouseOver(){
-        if(Input.GetKeyDown(KeyCode.Mouse0)){
+        if(Input.GetKeyUp(KeyCode.Mouse0)){
             Debug.Log("Play!");
             SceneManager.LoadScene("MainScene");
         }

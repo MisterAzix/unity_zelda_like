@@ -9,6 +9,15 @@ public class video_skip : MonoBehaviour
     public GameObject gamePlay;
     public GameObject gameQuit;
 
+    public Texture2D defaultTexture;
+    public CursorMode curMode = CursorMode.Auto;
+    public Vector2 hotSpot = Vector2.zero;
+    
+        void Awake()
+    {
+        Cursor.SetCursor(defaultTexture, hotSpot, curMode);
+    }
+
     IEnumerator Start(){
          yield return new WaitForSeconds(6);
          var videoPlayer = menuPart2.GetComponent<UnityEngine.Video.VideoPlayer>();
