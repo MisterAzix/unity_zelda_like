@@ -9,6 +9,9 @@ public class video_skip : MonoBehaviour
     public GameObject gamePlay;
     public GameObject gameQuit;
 
+    public AudioSource introMusic;
+    public AudioSource introMusic2;
+
     public Texture2D defaultTexture;
     public CursorMode curMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
@@ -16,6 +19,7 @@ public class video_skip : MonoBehaviour
         void Awake()
     {
         Cursor.SetCursor(defaultTexture, hotSpot, curMode);
+        introMusic.Play();
     }
 
     IEnumerator Start(){
@@ -25,5 +29,7 @@ public class video_skip : MonoBehaviour
          gamePlay.SetActive(true);
          gameQuit.SetActive(true);
          videoPlayer.Play();
+         introMusic.Stop();
+         introMusic2.Play();
     }
 }
