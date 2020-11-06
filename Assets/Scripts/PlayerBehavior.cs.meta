@@ -3,7 +3,19 @@ guid: 213970bba2917114b9dedaf0d75211f0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_frontSprite: {fileID: 1541713650951157066, guid: 427d3eea4a7dcfd4b832e1ac1d0dd8bb,
+      type: 3}
+  - m_leftSprite: {fileID: -4067952191199728239, guid: 427d3eea4a7dcfd4b832e1ac1d0dd8bb,
+      type: 3}
+  - m_rightSprite: {fileID: -1636626881473381386, guid: 427d3eea4a7dcfd4b832e1ac1d0dd8bb,
+      type: 3}
+  - m_backSprite: {fileID: -8789783977454121436, guid: 427d3eea4a7dcfd4b832e1ac1d0dd8bb,
+      type: 3}
+  - animator: {instanceID: 0}
+  - m_fireBall: {instanceID: 0}
+  - m_map: {instanceID: 0}
+  - m_dialogDisplayer: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
