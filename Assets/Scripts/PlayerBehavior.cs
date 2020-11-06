@@ -149,10 +149,10 @@ public class PlayerBehavior : MonoBehaviour
             {
                 m_dialogDisplayer.SetDialog(m_closestNPCDialog.GetDialog());
             }
-            else 
+           /* else 
             {
                 ShootFireball();
-            }
+            } */
         }
     }
 
@@ -178,7 +178,7 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
-    // Creates a fireball, and launches it
+ /*   // Creates a fireball, and launches it
     private void ShootFireball()
     {
         GameObject newFireball = Instantiate(m_fireBall, this.transform) as GameObject;
@@ -192,7 +192,7 @@ public class PlayerBehavior : MonoBehaviour
             // so Vector2(0f, 1f) is a direction of 0 in x and 1 in y (up)
             fireBallBehavior.Launch(new Vector2(0f, 1f));
         }
-    }
+    } */
 
 
     // This is automatically called by Unity when the gameObject (here the player)
