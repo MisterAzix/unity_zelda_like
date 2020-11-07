@@ -345,7 +345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239262484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: -16, z: 0}
+  m_LocalPosition: {x: 35, y: -16, z: 0}
   m_LocalScale: {x: 3.9125, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1518916240}
@@ -364,17 +364,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_dialogWithPlayer:
-  - text: ... [Espace pour continuer]
-    color: {r: 0, g: 0, b: 0, a: 1}
-  - text: Je m'appelle Ikan...
-    color: {r: 0, g: 0, b: 0, a: 1}
-  - text: "Et je ne sais pas ce que je fais sur cette \xEEle !"
-    color: {r: 0, g: 0, b: 0, a: 1}
-  - text: "Mon cano\xE9 s'est renvers\xE9... C'est tout ce dont je me souviens !"
-    color: {r: 0, g: 0, b: 0, a: 1}
-  - text: "[Fl\xE8ches : se d\xE9placer] [Espace : tirer ou parler \xE0 un NPC] [M:
-      Montrer/Enlever la carte]"
-    color: {r: 0, g: 0, b: 0, a: 1}
+  - text: ... Appuyer sur [ESPACE] pour continuer.
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - text: 'Antoine: Il faut que je retrouve rapidement la chambre de Louise.'
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - text: "Il me semble... Que c'\xE9tait la chambre num\xE9ro 122. "
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - text: Mais... Pourquoi...?
+    color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!61 &239262487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -388,7 +385,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 5.763191, y: 0.24523163}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -399,7 +396,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16, y: 16}
+  m_Size: {x: 4.4736176, y: 94.919785}
   m_EdgeRadius: 0
 --- !u!212 &239262488
 SpriteRenderer:
@@ -1566,7 +1563,7 @@ MonoBehaviour:
   introSound: {fileID: 887803686}
   backgroundMusic: {fileID: 1375410054}
   backgroundImage: {fileID: 911372387}
-  skipIntro: 1
+  skipIntro: 0
 --- !u!1 &595150645
 GameObject:
   m_ObjectHideFlags: 0
@@ -8475,13 +8472,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_dialogWithPlayer:
-  - text: 'NPC : Bonjour ! '
+  - text: 'Docteur: Bonjour ! '
     color: {r: 0, g: 0, b: 0, a: 1}
-  - text: "Ikan : Bonjour, je cherche le village le plus proche. Sais-tu o\xF9 il
-      se trouve ?"
+  - text: 'Antoine: Bonjour, je cherche la chambre 122.'
     color: {r: 0, g: 0, b: 0, a: 1}
-  - text: "NPC : Derri\xE8re la montagne. Il te faudra traverser la terrible Grotte
-      Ah'Spirant'"
+  - text: "Docteur: Au premier \xE9tage, pourquoi donc?"
+    color: {r: 0, g: 0, b: 0, a: 1}
+  - text: 'Antoine: Pour y voir ma femme je crois bien..'
+    color: {r: 0, g: 0, b: 0, a: 1}
+  - text: 'Docteur: Quelle femme?'
+    color: {r: 0, g: 0, b: 0, a: 1}
+  - text: 'Antoine: Ma femme, Louise Borowsky.'
+    color: {r: 0, g: 0, b: 0, a: 1}
+  - text: 'Docteur: Quelle femme?'
     color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!58 &1430173580
 CircleCollider2D:
