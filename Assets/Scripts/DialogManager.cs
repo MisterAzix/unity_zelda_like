@@ -16,6 +16,7 @@ public struct DialogPage
 {
     public string text;
     public Color color;
+    public GameObject character;
 }
 
 // This class is used to correctly display a full dialog
@@ -23,6 +24,8 @@ public class DialogManager : MonoBehaviour {
 
     public Text m_renderText;
     private List<DialogPage> m_dialogToDisplay;
+    private GameObject m_overlayToDisplay;
+    private Transform m_parentOverlay;
 
     void Awake () {
 
@@ -41,6 +44,8 @@ public class DialogManager : MonoBehaviour {
             }
 
             this.gameObject.SetActive(true);
+            m_parentOverlay = m_dialogToDisplay[0].character?m_dialogToDisplay[0].character.transform.parent:null;
+            if(m_parentOverlay) m_parentOverlay.gameObject.SetActive(true);
         }
     }
 	
@@ -55,8 +60,24 @@ public class DialogManager : MonoBehaviour {
 		if (m_dialogToDisplay.Count > 0)
         {
             m_renderText.text = m_dialogToDisplay[0].text;
-        } else
+            if(m_parentOverlay) {
+                foreach (Transform child in m_parentOverlay)
+                {
+                    if (child.tag == "DialogCharacter")
+                    {
+                        child.gameObject.SetActive(false);
+                    }
+                }
+                m_dialogToDisplay[0].character.gameObject.SetActive(true);
+            }
+        } 
+        else
         {
+            if(m_parentOverlay)
+            {
+                m_parentOverlay.gameObject.SetActive(false);
+                m_parentOverlay = null;
+            }
             this.gameObject.SetActive(false);
         }
 

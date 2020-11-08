@@ -366,12 +366,17 @@ MonoBehaviour:
   m_dialogWithPlayer:
   - text: ... Appuyer sur [ESPACE] pour continuer.
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: 'Antoine: Il faut que je retrouve rapidement la chambre de Louise.'
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: "Antoine: Il me semble... Que c'\xE9tait la chambre num\xE9ro 122. "
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: 'Antoine: Mais... Pourquoi...?'
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
+  m_overlayToDisplay: {fileID: 0}
 --- !u!61 &239262487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1398,7 +1403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &511844116
 Transform:
   m_ObjectHideFlags: 0
@@ -1563,7 +1568,7 @@ MonoBehaviour:
   introSound: {fileID: 887803686}
   backgroundMusic: {fileID: 1375410054}
   backgroundImage: {fileID: 911372387}
-  skipIntro: 1
+  skipIntro: 0
 --- !u!1 &595150645
 GameObject:
   m_ObjectHideFlags: 0
@@ -8827,11 +8832,15 @@ MonoBehaviour:
   - text: "[Vous voyez une feuille encadr\xE9e contre le mur. Vous pouvez y lire
       les informations suivantes:]"
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: "\xAB 1. Fermeture du 1er \xC9tage pour cause de r\xE9novations \xBB"
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: "Antoine: Le premier \xE9tage? C\u2019est l\xE0 o\xF9 se trouve Louise,
       vite, j\u2019esp\xE8re qu\u2019elle va bien !"
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
+  m_overlayToDisplay: {fileID: 0}
 --- !u!61 &832491285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9109,7 +9118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &911372386
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9390,6 +9399,8 @@ MonoBehaviour:
   m_dialogWithPlayer:
   - text: "[Vous \xEAtes au Rez de Chauss\xE9e]"
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
+  m_overlayToDisplay: {fileID: 0}
 --- !u!61 &1147118001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10885,18 +10896,26 @@ MonoBehaviour:
   m_dialogWithPlayer:
   - text: 'Docteur: Bonjour ! '
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Bonjour, je cherche la chambre 122.'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: "Docteur: Au premier \xE9tage, pourquoi donc?"
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Pour y voir ma femme je crois bien..'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Docteur: Quelle femme?'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Ma femme, Louise Borowsky.'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Docteur: Quelle femme?'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
+  m_overlayToDisplay: {fileID: 0}
 --- !u!58 &1430173580
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14602,7 +14621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1731528908
 Transform:
   m_ObjectHideFlags: 0

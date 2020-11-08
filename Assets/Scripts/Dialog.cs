@@ -10,9 +10,15 @@ using UnityEngine;
 
 public class Dialog : MonoBehaviour {
     public List<DialogPage> m_dialogWithPlayer;
+    public GameObject m_overlayToDisplay = null;
 
     public List<DialogPage> GetDialog()
     {
         return m_dialogWithPlayer;
+    }
+
+    public GameObject GetOverlay()
+    {
+        return m_overlayToDisplay;
     }
 }

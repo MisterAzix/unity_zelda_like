@@ -6,6 +6,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 // Represents the cardinal directions (South, North, West, East)
@@ -149,10 +150,10 @@ public class PlayerBehavior : MonoBehaviour
             {
                 m_dialogDisplayer.SetDialog(m_closestNPCDialog.GetDialog());
             }
-           /* else 
+            else 
             {
-                ShootFireball();
-            } */
+                //ShootFireball();
+            }
         }
     }
 
