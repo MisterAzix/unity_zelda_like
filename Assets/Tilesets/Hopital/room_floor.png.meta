@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: 9a444b991a587e44baced56a00245eb3
+guid: 3179b30ed061a1744a025c9ad69eab3f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1894151887531981083
-    second: doctor_face
+      213: -5585064399233440748
+    second: room_floor_0
   - first:
-      213: 8047662716121166976
-    second: doctor_face_idle
+      213: -5463878601136497077
+    second: room_floor_1
   - first:
-      213: -5599669983448265260
-    second: doctor_right
+      213: -3245305848636616475
+    second: room_floor_2
   - first:
-      213: -1553718234830525419
-    second: doctor_right_idle
+      213: -3377695916761343257
+    second: room_floor_3
   - first:
-      213: 6316328074272673121
-    second: doctor_back
+      213: 4750928394080531835
+    second: room_floor_4
   - first:
-      213: 2698398633970338345
-    second: doctor_left
+      213: -5487658182210733369
+    second: room_floor_5
   - first:
-      213: 6447422318931161250
-    second: doctor_left_idle
-  - first:
-      213: 912095829299295351
-    second: doctor_back_idle
+      213: -3224064368672566056
+    second: room_floor_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -88,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +97,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,169 +108,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: doctor_face
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b19baf62b11694a10800000000000000
-      internalID: 1894151887531981083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doctor_face_idle
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 96
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 084be8a1a9a0faf60800000000000000
-      internalID: 8047662716121166976
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doctor_right
+      name: room_floor_0
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 16
-        height: 32
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dd062181d9f942b0800000000000000
-      internalID: -5599669983448265260
+      spriteID: 414a204158ddd72b0800000000000000
+      internalID: -5585064399233440748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doctor_right_idle
+      name: room_floor_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e96637c576c24b0800000000000000
+      internalID: -5463878601136497077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_floor_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e05488668b56f2d0800000000000000
+      internalID: -3245305848636616475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_floor_3
       rect:
         serializedVersion: 2
         x: 48
         y: 64
         width: 16
-        height: 32
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51c21e35f75107ae0800000000000000
-      internalID: -1553718234830525419
+      spriteID: 7ea1722a5730021d0800000000000000
+      internalID: -3377695916761343257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doctor_back
+      name: room_floor_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 48
         width: 16
-        height: 32
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16d89df0bea18a750800000000000000
-      internalID: 6316328074272673121
+      spriteID: b75bc72f330bee140800000000000000
+      internalID: 4750928394080531835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doctor_left
+      name: room_floor_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 16
+        y: 48
         width: 16
-        height: 32
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92a8338c243a27520800000000000000
-      internalID: 2698398633970338345
+      spriteID: 7ca309845fbe7d3b0800000000000000
+      internalID: -5487658182210733369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doctor_left_idle
+      name: room_floor_6
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
+        x: 32
+        y: 48
         width: 16
-        height: 32
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a031dc6078d97950800000000000000
-      internalID: 6447422318931161250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doctor_back_idle
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 774ff72035a68ac00800000000000000
-      internalID: 912095829299295351
+      spriteID: 8d4174cd982d143d0800000000000000
+      internalID: -3224064368672566056
       vertices: []
       indices: 
       edges: []
