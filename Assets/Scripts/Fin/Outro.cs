@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Outro : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Outro : MonoBehaviour
     public GameObject credits;
 
     private bool inPlace;
+    private bool outroStarted;
     private int spaceCount;
 
     public List<DialogPage> m_dialogWithPlayer;
@@ -28,6 +30,8 @@ public class Outro : MonoBehaviour
 
     void Start(){
         spaceCount = 0;
+        inPlace = false;
+        outroStarted = false;
     }
 
     void OnTriggerEnter2D(){
@@ -35,18 +39,23 @@ public class Outro : MonoBehaviour
     }
 
     void Update(){
-        if(inPlace == true && Input.GetKeyDown(KeyCode.Space)){
-            spaceCount = spaceCount + 1;
+        if(outroStarted == false){
+            if(inPlace == true && Input.GetKeyDown(KeyCode.Space)){
+                spaceCount = spaceCount + 1;
+            }
+            if(spaceCount == 3){
+                outroMusic.Play();
+            }
+            if(spaceCount == 4){
+                var creditsVideo = credits.GetComponent<UnityEngine.Video.VideoPlayer>();
+                outroStarted = true;
+                creditsVideo.Play();
+                backgroundMusic.Stop();
+                StartCoroutine(Fade());
+                StartCoroutine(AutoQuit());
+            }
         }
-        if(spaceCount == 3){
-            outroMusic.Play();
-        }
-        if(spaceCount == 4){
-            var creditsVideo = credits.GetComponent<UnityEngine.Video.VideoPlayer>();
-            creditsVideo.Play();
-            backgroundMusic.Stop();
-            StartCoroutine(Fade());
-        }
+        
     }
 
     IEnumerator Fade(){
@@ -60,6 +69,10 @@ public class Outro : MonoBehaviour
             img.color = new Color(i, i, i, 1);
             yield return null;
         }
-        Destroy(GetComponent<Outro>());
+    }
+
+    IEnumerator AutoQuit(){
+        yield return new WaitForSeconds(114);
+        SceneManager.LoadScene("Menu");
     }
 }
