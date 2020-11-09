@@ -359,8 +359,7 @@ PrefabInstance:
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
       propertyPath: m_dialogWithPlayer.Array.data[0].text
-      value: "[Vous voyez un tiroir. Vous pouvez l'ouvrez, tirez le charriot et lisez
-        l'\xE9tiquette:]"
+      value: "[Vous voyez un tiroir. Vous l'ouvrez, tirez le charriot et lisez l'\xE9tiquette:]"
       objectReference: {fileID: 0}
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
@@ -753,8 +752,7 @@ PrefabInstance:
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
       propertyPath: m_dialogWithPlayer.Array.data[0].text
-      value: "[Vous voyez un tiroir. Vous pouvez l'ouvrez, tirez le charriot et lisez
-        l'\xE9tiquette:]"
+      value: "[Vous voyez un tiroir. Vous l'ouvrez, tirez le charriot et lisez l'\xE9tiquette:]"
       objectReference: {fileID: 0}
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
@@ -12313,7 +12311,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1903022393}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12784,8 +12782,7 @@ PrefabInstance:
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
       propertyPath: m_dialogWithPlayer.Array.data[0].text
-      value: "[Vous voyez un tiroir. Vous pouvez l'ouvrez, tirez le charriot et lisez
-        l'\xE9tiquette:]"
+      value: "[Vous voyez un tiroir. Vous l'ouvrez, tirez le charriot et lisez l'\xE9tiquette:]"
       objectReference: {fileID: 0}
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
@@ -12941,6 +12938,76 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42fd5562ec6cc2d48b5926273061cca1, type: 3}
+--- !u!1 &1096326370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1096326371}
+  - component: {fileID: 1096326372}
+  m_Layer: 5
+  m_Name: "Cr\xE9dits"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1096326371
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096326370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1903022393}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!328 &1096326372
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096326370}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: d3bdc78cece153544a0ee834a8e8a3de, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 519420031}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 1
+  m_AspectRatio: 5
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!1 &1264452522
 GameObject:
   m_ObjectHideFlags: 0
@@ -18530,8 +18597,7 @@ PrefabInstance:
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
       propertyPath: m_dialogWithPlayer.Array.data[0].text
-      value: "[Vous voyez un tiroir. Vous pouvez l'ouvrez, tirez le charriot et lisez
-        l'\xE9tiquette:]"
+      value: "[Vous voyez un tiroir. Vous l'ouvrez, tirez le charriot et lisez l'\xE9tiquette:]"
       objectReference: {fileID: 0}
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
@@ -18586,6 +18652,7 @@ MonoBehaviour:
   outroMusic: {fileID: 887803686}
   backgroundMusic: {fileID: 1375410054}
   img: {fileID: 911372387}
+  credits: {fileID: 1096326370}
   m_dialogWithPlayer: []
   m_overlayToDisplay: {fileID: 0}
 --- !u!50 &1776632081
@@ -18881,6 +18948,7 @@ RectTransform:
   - {fileID: 1037946012}
   - {fileID: 92778324}
   - {fileID: 1634910906}
+  - {fileID: 1096326371}
   - {fileID: 911372386}
   m_Father: {fileID: 1307985747}
   m_RootOrder: 0
@@ -19113,8 +19181,7 @@ PrefabInstance:
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
       propertyPath: m_dialogWithPlayer.Array.data[0].text
-      value: "[Vous voyez un tiroir. Vous pouvez l'ouvrez, tirez le charriot et lisez
-        l'\xE9tiquette:]"
+      value: "[Vous voyez un tiroir. Vous l'ouvrez, tirez le charriot et lisez l'\xE9tiquette:]"
       objectReference: {fileID: 0}
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}

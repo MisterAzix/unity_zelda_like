@@ -8,6 +8,8 @@ public class Outro : MonoBehaviour
     public AudioSource outroMusic;
     public AudioSource backgroundMusic;
     public RawImage img;
+    public GameObject credits;
+
     private bool inPlace;
     private int spaceCount;
 
@@ -40,6 +42,8 @@ public class Outro : MonoBehaviour
             outroMusic.Play();
         }
         if(spaceCount == 4){
+            var creditsVideo = credits.GetComponent<UnityEngine.Video.VideoPlayer>();
+            creditsVideo.Play();
             backgroundMusic.Stop();
             StartCoroutine(Fade());
         }
@@ -49,6 +53,11 @@ public class Outro : MonoBehaviour
         for (float i = 0; i >= 0; i += Time.deltaTime){
             // set color with i as alpha
             img.color = new Color(0, 0, 0, i);
+            yield return null;
+        }
+        for (float i = 0; i >= 0; i += Time.deltaTime){
+            // set color with i as alpha
+            img.color = new Color(i, i, i, 1);
             yield return null;
         }
         Destroy(GetComponent<Outro>());
