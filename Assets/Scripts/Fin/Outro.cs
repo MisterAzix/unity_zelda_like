@@ -8,6 +8,7 @@ public class Outro : MonoBehaviour
     public AudioSource outroMusic;
     public AudioSource backgroundMusic;
     public RawImage img;
+    private bool inPlace;
     private int spaceCount;
 
     public List<DialogPage> m_dialogWithPlayer;
@@ -27,8 +28,12 @@ public class Outro : MonoBehaviour
         spaceCount = 0;
     }
 
+    void OnTriggerEnter2D(){
+        inPlace = true;
+    }
+
     void Update(){
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(inPlace == true && Input.GetKeyDown(KeyCode.Space)){
             spaceCount = spaceCount + 1;
         }
         if(spaceCount == 3){
