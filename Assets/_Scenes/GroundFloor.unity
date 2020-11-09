@@ -366,12 +366,17 @@ MonoBehaviour:
   m_dialogWithPlayer:
   - text: ... Appuyer sur [ESPACE] pour continuer.
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: 'Antoine: Il faut que je retrouve rapidement la chambre de Louise.'
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: "Antoine: Il me semble... Que c'\xE9tait la chambre num\xE9ro 122. "
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: 'Antoine: Mais... Pourquoi...?'
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
+  m_overlayToDisplay: {fileID: 0}
 --- !u!61 &239262487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1563,7 +1568,7 @@ MonoBehaviour:
   introSound: {fileID: 887803686}
   backgroundMusic: {fileID: 1375410054}
   backgroundImage: {fileID: 911372387}
-  skipIntro: 1
+  skipIntro: 0
 --- !u!1 &595150645
 GameObject:
   m_ObjectHideFlags: 0
@@ -8827,11 +8832,15 @@ MonoBehaviour:
   - text: "[Vous voyez une feuille encadr\xE9e contre le mur. Vous pouvez y lire
       les informations suivantes:]"
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: "\xAB 1. Fermeture du 1er \xC9tage pour cause de r\xE9novations \xBB"
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: "Antoine: Le premier \xE9tage? C\u2019est l\xE0 o\xF9 se trouve Louise,
       vite, j\u2019esp\xE8re qu\u2019elle va bien !"
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
+  m_overlayToDisplay: {fileID: 0}
 --- !u!61 &832491285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9163,6 +9172,77 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911372385}
   m_CullTransparentMesh: 0
+--- !u!1 &934332178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 934332179}
+  - component: {fileID: 934332181}
+  - component: {fileID: 934332180}
+  m_Layer: 5
+  m_Name: IntroImage (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &934332179
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934332178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1903022393}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00068665, y: -0.00060272}
+  m_SizeDelta: {x: 923.5641, y: 519.72375}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &934332180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934332178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &934332181
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934332178}
+  m_CullTransparentMesh: 0
 --- !u!1 &959215571
 GameObject:
   m_ObjectHideFlags: 0
@@ -9319,6 +9399,8 @@ MonoBehaviour:
   m_dialogWithPlayer:
   - text: "[Vous \xEAtes au Rez de Chauss\xE9e]"
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
+  m_overlayToDisplay: {fileID: 0}
 --- !u!61 &1147118001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10814,18 +10896,26 @@ MonoBehaviour:
   m_dialogWithPlayer:
   - text: 'Docteur: Bonjour ! '
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Bonjour, je cherche la chambre 122.'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: "Docteur: Au premier \xE9tage, pourquoi donc?"
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Pour y voir ma femme je crois bien..'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Docteur: Quelle femme?'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Ma femme, Louise Borowsky.'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Docteur: Quelle femme?'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
+  m_overlayToDisplay: {fileID: 0}
 --- !u!58 &1430173580
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14728,6 +14818,7 @@ RectTransform:
   - {fileID: 92778324}
   - {fileID: 1634910906}
   - {fileID: 911372386}
+  - {fileID: 934332179}
   m_Father: {fileID: 1307985747}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
