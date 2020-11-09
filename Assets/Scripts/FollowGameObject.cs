@@ -15,7 +15,7 @@ public class FollowGameObject : MonoBehaviour {
     // (z remains the one of the camera, to respect the depth)
 	void Update () {
         this.transform.position = new Vector3(m_objectToFollow.transform.position.x,
-                                              m_objectToFollow.transform.position.y,
+                                              m_objectToFollow.transform.position.y-320/4,
                                               this.transform.position.z);
 	}
 }
