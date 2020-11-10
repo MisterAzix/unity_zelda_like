@@ -312,11 +312,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233123898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 87.89, y: 16.9, z: 0}
+  m_LocalPosition: {x: 87.89, y: 16.900002, z: 0}
   m_LocalScale: {x: 5.57, y: 2, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1573149433}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &239142292
 GameObject:
@@ -9058,7 +9058,7 @@ Transform:
   m_Children:
   - {fileID: 289857581}
   m_Father: {fileID: 1573149433}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &747723962
 GameObject:
@@ -11022,7 +11022,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1573149433}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &1437285890
 TilemapCollider2D:
@@ -14945,6 +14945,7 @@ MonoBehaviour:
   m_fireBall: {fileID: 1502969918981896, guid: dd8b7b33984359b49a25a7c46d305262, type: 3}
   m_map: {fileID: 1634910905}
   m_dialogDisplayer: {fileID: 92778327}
+  m_interaction: {fileID: 0}
 --- !u!50 &1462164510
 Rigidbody2D:
   serializedVersion: 4
@@ -15198,6 +15199,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 233123901}
   - {fileID: 1967362263}
   - {fileID: 1437285889}
   - {fileID: 701841661}
@@ -15542,7 +15544,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1573149433}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1967362264
 TilemapRenderer:

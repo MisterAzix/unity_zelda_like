@@ -56,7 +56,7 @@ public class DialogManager : MonoBehaviour {
                 }
                 i++;
             }
-            m_parentOverlay = m_dialogToDisplay[index].character.transform.parent;
+            m_parentOverlay = m_dialogToDisplay[index].character?m_dialogToDisplay[index].character.transform.parent:null;
             //m_parentOverlay = m_dialogToDisplay[0].character?m_dialogToDisplay[0].character.transform.parent:null;
             if(m_parentOverlay) m_parentOverlay.gameObject.SetActive(true);
         }
