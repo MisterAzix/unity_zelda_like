@@ -4,8 +4,10 @@
  * 
  */
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -44,7 +46,18 @@ public class DialogManager : MonoBehaviour {
             }
 
             this.gameObject.SetActive(true);
-            m_parentOverlay = m_dialogToDisplay[0].character?m_dialogToDisplay[0].character.transform.parent:null;
+            int index = 0;
+            int i = 0;
+            foreach (var dialog in m_dialogToDisplay)
+            {
+                if (dialog.character)
+                {
+                    index = i;
+                }
+                i++;
+            }
+            m_parentOverlay = m_dialogToDisplay[index].character.transform.parent;
+            //m_parentOverlay = m_dialogToDisplay[0].character?m_dialogToDisplay[0].character.transform.parent:null;
             if(m_parentOverlay) m_parentOverlay.gameObject.SetActive(true);
         }
     }
@@ -60,6 +73,7 @@ public class DialogManager : MonoBehaviour {
 		if (m_dialogToDisplay.Count > 0)
         {
             m_renderText.text = m_dialogToDisplay[0].text;
+            //UnityEngine.Debug.Log(m_parentOverlay);
             if(m_parentOverlay) {
                 foreach (Transform child in m_parentOverlay)
                 {
@@ -68,7 +82,7 @@ public class DialogManager : MonoBehaviour {
                         child.gameObject.SetActive(false);
                     }
                 }
-                m_dialogToDisplay[0].character.gameObject.SetActive(true);
+                if (m_dialogToDisplay[0].character) m_dialogToDisplay[0].character.gameObject.SetActive(true);
             }
         } 
         else
