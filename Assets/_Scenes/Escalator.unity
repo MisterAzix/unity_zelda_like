@@ -474,12 +474,17 @@ MonoBehaviour:
   m_dialogWithPlayer:
   - text: ... Appuyer sur [ESPACE] pour continuer.
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: 'Antoine: Il faut que je retrouve rapidement la chambre de Louise.'
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: "Il me semble... Que c'\xE9tait la chambre num\xE9ro 122. "
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
   - text: Mais... Pourquoi...?
     color: {r: 0, g: 0, b: 0, a: 0}
+    character: {fileID: 0}
+  m_overlayToDisplay: {fileID: 0}
 --- !u!61 &239262487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1538,18 +1543,26 @@ MonoBehaviour:
   m_dialogWithPlayer:
   - text: 'Docteur: Bonjour ! '
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Bonjour, je cherche la chambre 122.'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: "Docteur: Au premier \xE9tage, pourquoi donc?"
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Pour y voir ma femme je crois bien..'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Docteur: Quelle femme?'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Ma femme, Louise Borowsky.'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Docteur: Quelle femme?'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
+  m_overlayToDisplay: {fileID: 0}
 --- !u!58 &289857585
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10651,7 +10664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1307985747
 Transform:
   m_ObjectHideFlags: 0
@@ -10860,18 +10873,26 @@ MonoBehaviour:
   m_dialogWithPlayer:
   - text: 'Docteur: Bonjour ! '
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Bonjour, je cherche la chambre 122.'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: "Docteur: Au premier \xE9tage, pourquoi donc?"
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Pour y voir ma femme je crois bien..'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Docteur: Quelle femme?'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Antoine: Ma femme, Louise Borowsky.'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
   - text: 'Docteur: Quelle femme?'
     color: {r: 0, g: 0, b: 0, a: 1}
+    character: {fileID: 0}
+  m_overlayToDisplay: {fileID: 0}
 --- !u!58 &1430173580
 CircleCollider2D:
   m_ObjectHideFlags: 0
