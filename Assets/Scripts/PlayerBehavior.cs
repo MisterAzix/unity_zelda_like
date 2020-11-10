@@ -28,6 +28,8 @@ public class PlayerBehavior : MonoBehaviour
     public GameObject m_map = null;
     public DialogManager m_dialogDisplayer;
 
+    public GameObject m_interaction = null;
+
     private Dialog m_closestNPCDialog;
 
     Rigidbody2D m_rb2D;
@@ -39,6 +41,7 @@ public class PlayerBehavior : MonoBehaviour
         m_renderer = gameObject.GetComponent<SpriteRenderer>();
 
         m_closestNPCDialog = null;
+        m_interaction.SetActive(false);
     }
 
     // This update is called at a very precise and constant FPS, and
@@ -123,7 +126,7 @@ public class PlayerBehavior : MonoBehaviour
         // or desactivated if already on screen
         if (Input.GetKeyDown(KeyCode.M))
         {
-            m_map.SetActive(!m_map.activeSelf);
+            //m_map.SetActive(!m_map.activeSelf);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -148,6 +151,7 @@ public class PlayerBehavior : MonoBehaviour
         {
             if (m_closestNPCDialog != null)
             {
+                m_interaction.SetActive(false);
                 m_dialogDisplayer.SetDialog(m_closestNPCDialog.GetDialog());
             }
             else 
@@ -206,6 +210,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         if (collision.tag == "NPC")
         {
+            m_interaction.SetActive(true);
             m_closestNPCDialog = collision.GetComponent<Dialog>();
         }
         else if (collision.tag == "InstantDialog")
@@ -227,6 +232,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         if (collision.tag == "NPC")
         {
+            m_interaction.SetActive(false);
             m_closestNPCDialog = null;
         }
         else if (collision.tag == "InstantDialog")
