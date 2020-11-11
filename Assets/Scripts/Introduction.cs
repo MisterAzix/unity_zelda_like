@@ -25,7 +25,8 @@ public class Introduction : MonoBehaviour
         }
     }
 
-    IEnumerator StopIntro(){
+    IEnumerator StopIntro()
+    {
         yield return new WaitForSeconds(41); // 41 seconds
         backgroundMusic.Play();
         for (float i = 1; i >= 0; i -= Time.deltaTime){

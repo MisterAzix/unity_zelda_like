@@ -15,31 +15,21 @@ public class Outro : MonoBehaviour
     private bool outroStarted;
     private int spaceCount;
 
-    public List<DialogPage> m_dialogWithPlayer;
-    public GameObject m_overlayToDisplay = null;
-
-    public List<DialogPage> GetDialog()
+    void Start()
     {
-        return m_dialogWithPlayer;
-    }
-
-    public GameObject GetOverlay()
-    {
-        return m_overlayToDisplay;
-    }
-
-    void Start(){
         spaceCount = 0;
         inPlace = false;
         outroStarted = false;
     }
 
-    void OnTriggerEnter2D(){
+    void OnTriggerEnter2D()
+    {
         inPlace = true;
     }
 
     void Update(){
-        if(outroStarted == false){
+        if(outroStarted == false)
+        {
             if(inPlace == true && Input.GetKeyDown(KeyCode.Space)){
                 spaceCount = spaceCount + 1;
             }
@@ -58,7 +48,8 @@ public class Outro : MonoBehaviour
         
     }
 
-    IEnumerator Fade(){
+    IEnumerator Fade()
+    {
         for (float i = 0; i >= 0; i += Time.deltaTime){
             // set color with i as alpha
             img.color = new Color(0, 0, 0, i);
@@ -71,7 +62,8 @@ public class Outro : MonoBehaviour
         }
     }
 
-    IEnumerator AutoQuit(){
+    IEnumerator AutoQuit()
+    {
         yield return new WaitForSeconds(114);
         SceneManager.LoadScene("Menu");
     }
