@@ -27,6 +27,11 @@ public class Stairs : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         inPlace = true;
+        if (collision.tag == "StopMove")
+        {
+            stopMove = true;
+            Destroy(this);
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
