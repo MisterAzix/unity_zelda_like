@@ -13,6 +13,7 @@ using UnityEngine;
 // one is enabled ; and the map indication is updated accordingly
 public class Teleport : MonoBehaviour {
     public GameObject m_teleportTo = null;
+    public GameObject m_Locker = null;
     
     private GameObject m_player = null;
 
@@ -26,7 +27,21 @@ public class Teleport : MonoBehaviour {
      
         if (collision.gameObject.tag == "Player")
         {
-            TeleportPlayer();
+            if(m_Locker)
+            {
+                if(!m_Locker.activeSelf)
+                {
+                    TeleportPlayer();
+                }
+                else
+                {
+                    UnityEngine.Debug.Log("Need key to TP");
+                }
+            }
+            else
+            {
+                TeleportPlayer();
+            }
         }
 
     }
