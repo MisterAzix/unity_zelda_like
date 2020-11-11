@@ -11,6 +11,7 @@ using UnityEngine;
 public class Dialog : MonoBehaviour {
     public List<DialogPage> m_dialogWithPlayer;
     public GameObject m_overlayToDisplay = null;
+    public bool m_instantDialogDestroy = true;
 
     public List<DialogPage> GetDialog()
     {

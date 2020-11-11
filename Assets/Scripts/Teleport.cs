@@ -14,12 +14,21 @@ using UnityEngine;
 public class Teleport : MonoBehaviour {
     public GameObject m_teleportTo = null;
     public GameObject m_Locker = null;
-    
+    public GameObject m_instantDialog;
+
     private GameObject m_player = null;
 
     private void Awake()
     {
         m_player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    void Update(){
+        if(m_Locker){
+            if(!m_Locker.activeSelf){
+                if(m_instantDialog) Destroy(m_instantDialog); 
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,19 +38,9 @@ public class Teleport : MonoBehaviour {
         {
             if(m_Locker)
             {
-                if(!m_Locker.activeSelf)
-                {
-                    TeleportPlayer();
-                }
-                else
-                {
-                    UnityEngine.Debug.Log("Need key to TP");
-                }
+                if(!m_Locker.activeSelf) TeleportPlayer();
             }
-            else
-            {
-                TeleportPlayer();
-            }
+            else TeleportPlayer();
         }
 
     }

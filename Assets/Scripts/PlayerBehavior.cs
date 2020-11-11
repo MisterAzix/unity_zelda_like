@@ -246,7 +246,7 @@ public class PlayerBehavior : MonoBehaviour
         }
         else if (collision.tag == "InstantDialog")
         {
-            Destroy(collision.gameObject);
+            if(collision.GetComponent<Dialog>().m_instantDialogDestroy) Destroy(collision.gameObject);
         }
     }
 }
