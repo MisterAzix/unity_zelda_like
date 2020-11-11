@@ -1945,8 +1945,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000038147, y: -323.36}
-  m_SizeDelta: {x: 1149.975, y: 646.7124}
+  m_AnchoredPosition: {x: 7.6, y: -378.1}
+  m_SizeDelta: {x: 1359.9303, y: 764.7853}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &230713841
 MonoBehaviour:
@@ -3245,7 +3245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &511844116
 Transform:
   m_ObjectHideFlags: 0
@@ -3535,7 +3535,7 @@ MonoBehaviour:
   introSound: {fileID: 887803686}
   backgroundMusic: {fileID: 1375410054}
   backgroundImage: {fileID: 911372387}
-  skipIntro: 1
+  skipIntro: 0
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26769,12 +26769,12 @@ PrefabInstance:
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
       propertyPath: m_dialogWithPlayer.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
       propertyPath: m_dialogWithPlayer.Array.data[1].text
-      value: "\xAB Y'a des morts ici ptdr \xBB"
+      value: "\xAB Ici se trouve les corps des r\xE9cents d\xE9c\xE8s \xBB"
       objectReference: {fileID: 0}
     - target: {fileID: 6561518126319669219, guid: 42fd5562ec6cc2d48b5926273061cca1,
         type: 3}
@@ -29603,7 +29603,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2095276026
 Transform:
   m_ObjectHideFlags: 0
